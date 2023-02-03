@@ -15,7 +15,7 @@ export class DataService {
 
   }
   getLatestMovie() : Observable<any>{
-    return this.http.get<any>(this.url+'/movie/latest?api_key='+environment.api_key);
+    return this.http.get<any>(this.url+'/movie/new?api_key='+environment.api_key);
   }
   getPopularMovies() : Observable<Movie>{
 return this.http.get<Movie>(this.url+'/movie/popular?api_key='+environment.api_key);
